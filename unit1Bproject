@@ -1,0 +1,58 @@
+class Contact:
+    name = ""
+    number = ""
+    email = ""
+ 
+ def contactList (Contact):
+     print[contactList]
+
+def addContact():
+    print()
+    contact = contactList()
+    contact.name = input("Enter contact name: ")
+    contact.number = input("Enter contact number: ")
+    contact.email = input("Enter contact email: ")
+    contactList.append = input (contactList)
+    print("Contact added.")
+    print()
+     
+def getMenuChoice():
+    print("1. Add new contact")
+    print("2. Print all contacts")
+    print("3. Delete a contact")
+    print("4. Quit")
+    return input("Please enter your choice (1-4): ")
+ 
+def printContacts():
+    print()
+    print("Printing contacts...")
+    for itm in contactList:
+        print (itm.name + ", " + itm.number + ","+ itm.email),
+    print()
+
+def deleteContact():
+    print()
+    print("What contact do you want to delete?")
+    contactList = range(10)
+while contactList:
+    choice = rchoice(contactList)
+    contactList.remove(choice)
+    print (choice, "Was removed")
+
+
+
+    
+ 
+#MAIN ROUTINE
+contactList == []
+choice = getMenuChoice()
+while choice != "4":
+    if choice == "1":
+        addContact()
+    elif choice == "2":
+        printContacts()
+    elif choice == "3":
+        deleteContact()
+        
+print()
+print("Goodbye.")
